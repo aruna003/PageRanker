@@ -11,7 +11,23 @@
             align-items: center;
             height: 100vh;
         }
-
+        h1 { 	background-image:linear-gradient(0deg, rgba(239.00000095367432, 42.000001296401024, 181.0000044107437, 1) 0%,rgba(55.00000052154064, 6.000000117346644, 185.00000417232513, 1) 100%) ;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	-moz-background-clip:text;
+	-moz-text-fill-color:transparent;
+	-ms-background-clip:text;
+	-ms-text-fill-color:transparent;
+	width:745px;
+	height:218px;
+	position:absolute;
+	left: 450px;
+	top:100px;
+	font-family:Inter;
+	text-align:right;
+	font-size:180px;
+	letter-spacing:0;
+    }
         #search-container {
             text-align: center;
         }
@@ -29,7 +45,7 @@
         }
 
         #search-button {
-            background-color: #4285f4;
+            background-color: #df42f4;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -39,7 +55,7 @@
         }
 
         #search-button:hover {
-            background-color: #357ae8;
+            background-color: #a128b1;
         }
 
         #search-results {
@@ -51,7 +67,7 @@
             top: 10px; /* Adjust the top position as needed */
             right: 10px; /* Adjust the right position as needed */
             text-decoration: none;
-            background-color: #4285f4;
+            background-color: #b133b6;
             color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
@@ -60,10 +76,12 @@
     </style>
 </head>
 <body>
+    <h1>Search</h1>
+
     <div id="search-container">
-        <div id="logo">
+                <!-- <div id="logo">
             <img src="search.png" alt="Your Logo" width="300" height="100">
-        </div>
+        </div> -->
         <!-- <form action="javascript:void(0);" onsubmit="handleSearch()"> -->
             <form action="searchresult.html" method="get">
             <input type="text" name="q" id="search-box" placeholder="Search the web">
